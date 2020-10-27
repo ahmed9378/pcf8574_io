@@ -5,9 +5,10 @@ tested on raspberry pi 3b plus with two PCF8574 boards.
 
 
 First install smbus2 using:
-`pip install smbus2` 
+`pip3 install smbus2` 
+
 then install the actual package using:
-`pip install pcf8574-io`
+`pip3 install pcf8574-io`
 
 
 Usage Example:
@@ -15,8 +16,9 @@ Usage Example:
 import pcf8574_io
 
 # you can use up to 8 PCF8574 boards 0x20 and 0x21 are the I2C addresses
-p1 = pcf8574_io.PCF(0x20)
-p2 = pcf8574_io.PCF(0x21)
+# true will set all the pins HIGH +5v false will set them to LOW 0v 
+p1 = pcf8574_io.PCF(0x20, True)
+p2 = pcf8574_io.PCF(0x21, False)
 
 # p0 to p7 are the pins name
 # INPUT or OUTPUT is the mode
@@ -34,9 +36,15 @@ p2.pin_mode("p7", "OUTPUT")
 p2.digital_write("p7", "LOW")
 print(p2.digital_read("p7"))
 ```
+
+Note: the board has only 25mA output current so if you want to control some relay modules,
+that need more than 25mA use more than one pin to control each relay.
+
 The board been used:
 ![alt text](https://image.made-in-china.com/2f0j00CbvRKwBGGecA/Pcf8574-Io-Expansion-Board-I-O-Expander-I2c-Bus-Evaluation-Development-Module.jpg)
 
+#**Link**
+https://pypi.org/project/pcf8574-io/
 
 
 

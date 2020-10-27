@@ -11,7 +11,7 @@ classifiers = [
 
 setup(
     name='pcf8574_io',
-    version='0.0.2',
+    version='0.0.3',
     description='setup pin mode and read, write to PCF8574 pins',
     long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
     url='',

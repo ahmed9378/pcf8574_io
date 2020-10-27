@@ -6,14 +6,18 @@ smBusNum = 1
 writeData = 0x00
 
 
-def setup(PCFAdd, smBus):
+def setup(PCFAdd, smBus, status):
     global pinModeFlag, writeData, PCFAddress, smBusNum
     pinModeFlag = 0x00
     PCFAddress = PCFAdd
     smBusNum = smBus
     writeData = 0x00
-    with SMBus(smBusNum) as bus:
-        b = bus.write_byte(PCFAddress, 0x00)
+    if status:
+        with SMBus(smBusNum) as bus:
+            b = bus.write_byte(PCFAddress, 0xFF)
+    elif not status:
+        with SMBus(smBusNum) as bus:
+            b = bus.write_byte(PCFAddress, 0x00)
 
 
 # mode INPUT 0,OUTPUT 1

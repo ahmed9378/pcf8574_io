@@ -1,8 +1,8 @@
 import pcf8574_io
 
 # you can use up to 8 PCF8574 boards
-p1 = pcf8574_io.PCF(0x20)
-p2 = pcf8574_io.PCF(0x21)
+p1 = pcf8574_io.PCF(0x20, True)
+p2 = pcf8574_io.PCF(0x21, False)
 
 # p0 to p7 are the pins name
 # INPUT or OUTPUT is the mode
