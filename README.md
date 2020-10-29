@@ -16,7 +16,7 @@ Usage Example:
 import pcf8574_io
 
 # you can use up to 8 PCF8574 boards 0x20 and 0x21 are the I2C addresses
-# true will set all the pins HIGH +5v false will set them to LOW 0v 
+# true will set all the pins HIGH +3.3v false will set them to LOW 0v 
 p1 = pcf8574_io.PCF(0x20, True)
 p2 = pcf8574_io.PCF(0x21, False)
 
@@ -26,7 +26,7 @@ p1.pin_mode("p0", "INPUT")
 print(p1.digital_read("p0"))
 
 # you can write and read the output pins
-# use HIGH or LOW to set the pin HIGH is +5v LOW is 0v
+# use HIGH or LOW to set the pin HIGH is +3.3v LOW is 0v
 p1.pin_mode("p4", "OUTPUT")
 p1.digital_write("p4", "HIGH")
 print(p1.digital_read("p4"))
