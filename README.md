@@ -17,8 +17,8 @@ import pcf8574_io
 
 # you can use up to 8 PCF8574 boards 0x20 and 0x21 are the I2C addresses
 # true will set all the pins HIGH +3.3v false will set them to LOW 0v 
-p1 = pcf8574_io
-p2 = pcf8574_io
+p1 = pcf8574_io.PCF(0x20)
+p2 = pcf8574_io.PCF(0x21)
 
 # p0 to p7 are the pins name
 # INPUT or OUTPUT is the mode
