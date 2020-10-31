@@ -11,9 +11,9 @@ classifiers = [
 
 setup(
     name='pcf8574_io',
-    version='0.0.5',
+    version='0.0.6',
     description=' PCF8574 driver to set pin mode, read and write digital signal 3.3v ',
-    long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
+    long_description=open('README.txt').read() + "/n/n" + "https://github.com/ahmed9378/pcf8574_io",
     url='https://github.com/ahmed9378/pcf8574_io',
     author='Ahmed Omar',
     author_email='ahmed.bm78@gmail.com',

@@ -23,3 +23,8 @@ Change Log
 ------------------
 - fifth Release
 - fix bugs
+
+0.0.6 (30/10/2020)
+------------------
+- fifth Release
+- fix bugs
