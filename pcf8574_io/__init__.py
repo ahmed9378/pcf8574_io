@@ -7,7 +7,7 @@ class PCF:
         self.address = address
         self.status = True
         self.pinModeFlag = 0x00
-        self.smBusNum = 1
+        self.smBusNum = 0
         PCF85.setup(address, self.smBusNum, self.status)
 
     def pin_mode(self, PinName, Mode):
