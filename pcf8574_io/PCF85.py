@@ -31,6 +31,7 @@ def digitalRead(pinName, smbs, addr):
         b = bus.read_byte(addr)
     if isKthBitSet(b, pinNameToNum(pinName) + 1):
         return True
+        print(b)
     else:
         return False
 
