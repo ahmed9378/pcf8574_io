@@ -29,11 +29,10 @@ def set_mode(pnNum, mode, rValue, flg):
 def digitalRead(pinName, smbs, addr):
     with SMBus(smbs) as bus:
         b = bus.read_byte(addr)
-    if isKthBitSet(b, pinNameToNum(pinName) + 1):
-        return True
-        print(b)
-    else:
-        return False
+    # if isKthBitSet(b, pinNameToNum(pinName) + 1):
+        return b
+    # else:
+        # return False
 
 
 def pinNameToNum(pinName):

@@ -5,7 +5,7 @@ class PCF:
 
     def __init__(self, address):
         self.address = address
-        self.status = True
+        self.status = False
         self.pinModeFlag = 0x00
         self.smBusNum = 0
         PCF85.setup(address, self.smBusNum, self.status)
