@@ -13,8 +13,23 @@ class PCF:
     def pin_mode(self, PinName, Mode):
         self.pinModeFlag = PCF85.pin_mode(PinName, Mode, self.pinModeFlag)
 
-    def digital_read(self, PinName):
+    def read(self, PinName):
         return PCF85.digitalRead(PinName, self.smBusNum, self.address)
 
-    def digital_write(self, PinName, Val):
+    def write(self, PinName, Val):
         PCF85.digitalWrite(PinName, Val, self.address, self.pinModeFlag, self.smBusNum)
+
+    def set_i2cBus(self, port):
+        self.smBusNum = port
+    
+    def get_i2cBus(self):
+        return self.smBusNum
+    
+    def get_pin_mode(self, PinName):
+        return PCF85.get_pin_mode(PinName,self.pinModeFlag)
+        
+    def is_pin_output(self, PinName):
+        return PCF85.is_pin_output(PinName,self.pinModeFlag)
+    
+    def get_all_mode(self):
+        return PCF85.get_all_mode(self.pinModeFlag)

@@ -26,5 +26,11 @@ Change Log
 
 0.0.6 (30/10/2020)
 ------------------
-- fifth Release
+- sixth Release
 - fix bugs
+
+0.1.0 (24/01/2021)
+------------------
+- Seventh release
+- fix bugs
+- add more functions

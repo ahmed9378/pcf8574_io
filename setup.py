@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 classifiers = [
-    'Development Status :: 4 - Beta',
+    'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Education',
     'Operating System :: Other OS',
     'Topic :: System :: Hardware :: Hardware Drivers',
@@ -11,7 +11,7 @@ classifiers = [
 
 setup(
     name='pcf8574_io',
-    version='0.0.6',
+    version='0.1.0',
     description=' PCF8574 driver to set pin mode, read and write digital signal 3.3v ',
     long_description=open('README.txt').read() + "/n/n" + "https://github.com/ahmed9378/pcf8574_io",
     url='https://github.com/ahmed9378/pcf8574_io',
