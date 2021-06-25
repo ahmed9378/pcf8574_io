@@ -43,9 +43,6 @@ print(p1.get_all_mode()) # returns list of all pins ["OUTPUT","INPUT",...etc]
 
 ```
 
-Note: the board has only 25mA output current so if you want to control some relay modules,
-that need more than 25mA use more than one pin to control each relay.
-
 The board been used:
 ![alt text](https://image.made-in-china.com/2f0j00CbvRKwBGGecA/Pcf8574-Io-Expansion-Board-I-O-Expander-I2c-Bus-Evaluation-Development-Module.jpg)
 
