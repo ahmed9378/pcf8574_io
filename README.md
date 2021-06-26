@@ -46,7 +46,7 @@ print(p1.get_all_mode()) # returns list of all pins ["OUTPUT","INPUT",...etc]
 The board been used:
 ![alt text](https://image.made-in-china.com/2f0j00CbvRKwBGGecA/Pcf8574-Io-Expansion-Board-I-O-Expander-I2c-Bus-Evaluation-Development-Module.jpg)
 
-#**Link**
-https://pypi.org/project/pcf8574-io/
+**Link**
+[pcf8574-io](https://pypi.org/project/pcf8574-io/)
 
 
