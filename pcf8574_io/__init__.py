@@ -3,11 +3,11 @@ from pcf8574_io import PCF85
 
 class PCF:
 
-    def __init__(self, address):
+    def __init__(self, address, smBusNum = 1):
         self.address = address
         self.status = True
         self.pinModeFlag = 0x00
-        self.smBusNum = 1
+        self.smBusNum = smBusNum
         PCF85.setup(address, self.smBusNum, self.status)
 
     def pin_mode(self, PinName, Mode):
